@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b1d66eec28.js" crossorigin="anonymous"></script>
+    <title>Cadastro de Usuários</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="logo"><i class="fa-brands fa-pied-piper-pp logo"></i></div>
+        <a href="/home">Home</a>
+        <a href="/listarprodutos">Listar Produtos</a>
+        <a href="/cadusuario">Novo Usuário</a>
+        <a href="/cadcliente">Novo Cliente</a>
+        
+        <a href="/sair">Sair</a>
+        
+    </div>
+    
+    <div class="container">
+       
+        <div class="cadastro">
+            <h2>
+                ALTERAÇÃO DE PRODUTO
+            </h2>
+        <form action="/atualizarproduto" method="post">
+            <input type="number" name="id" id="id" value="<%= dados.id %>" hidden>
+
+            <span>Nome:</span><br>
+            <input type="text" name="nome" id="nome" value="<%= dados.nome %>"><br>
+                    
+            <span>Preço:</span><br>
+            <input type="text" name="preco" id="preco" value="<%= dados.preco %>"><br>
+
+            <span>Cor:</span><br>
+            <input type="text" name="cor" id="cor" value="<%= dados.cor %>"><br>
+
+            <span>Qtde:</span><br>
+            <input type="text" name="qtde" id="qtde" value="<%= dados.qtde %>"><br>
+
+            <span>Status:</span><br>
+            <input type="text" name="status" id="status" value="<%= dados.status %>"><br>
+            
+            <br>
+            <input type="submit" value="Atualizar"><br>
+        </form>
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>

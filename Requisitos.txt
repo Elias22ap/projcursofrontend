@@ -1,0 +1,7 @@
+1. Nodejs + Ejs
+2. Sistema com formulário de Cadastro, leitura, exclusão e alteração de usuários em uma base mysql;
+3. formulário de login e senha;
+4. Com acesso autorizado;
+5.Usuário Administrador
+6. id, nome, usuario, senha, status, usuário pode ser o email
+7. Criar outros links, cadastro de produtos, e etc.
